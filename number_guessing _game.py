@@ -14,7 +14,8 @@ while True:
         elif player < secret_number:
             print("Too Low!, Try Again.")
         else:
-            print("Congrats!, you guesses the number in {guess} attempt(s)")
+            print(f"🎉 Congrats! You guessed the number in {guess} {'guess' if guess == 1 else 'guesses'}.")
+
     except ValueError:
         print("Invalid Input. Please enter a number from 1 to 100.")
 
